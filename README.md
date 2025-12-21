@@ -27,6 +27,7 @@ Skills are specialized folders containing instructions, scripts, and resources t
 - **[mcp-builder](./mcp-builder/)** - Build high-quality MCP servers for external integrations
 - **[requesting-code-review](./requesting-code-review/)** - Request comprehensive code reviews before major features
 - **[receiving-code-review](./receiving-code-review/)** - Receive and implement code review feedback effectively
+- **[model-trainer](./model-trainer/)** - Train and fine-tune language models using TRL on Hugging Face Jobs infrastructure
 
 ### 🎨 Design & Creative
 - **[artifacts-builder](./artifacts-builder/)** - Create complex HTML artifacts using React, Tailwind CSS, and shadcn/ui
@@ -45,6 +46,9 @@ Skills are specialized folders containing instructions, scripts, and resources t
 - **[docx](./document-skills/docx/)** - Generate professional Word documents
 - **[pptx](./document-skills/pptx/)** - Build compelling PowerPoint presentations
 - **[pdf](./document-skills/pdf/)** - Work with PDF documents and fillable forms
+- **[hugging-face-dataset-creator](./hugging-face-dataset-creator/)** - Create and manage datasets on Hugging Face Hub
+- **[hugging-face-evaluation-manager](./hugging-face-evaluation-manager/)** - Add and manage evaluation results in Hugging Face model cards
+- **[hugging-face-paper-publisher](./hugging-face-paper-publisher/)** - Publish and manage research papers on Hugging Face Hub
 - **[competitive-ads-extractor](./competitive-ads-extractor/)** - Analyze competitors' advertising strategies
 - **[lead-research-assistant](./lead-research-assistant/)** - Identify high-quality business leads
 - **[invoice-organizer](./invoice-organizer/)** - Organize invoices and receipts for tax preparation
