@@ -1,4 +1,4 @@
-# 🎯 Claude Agent Skills - Awesome Skills Collection
+# 🎯 Agent Skills - Awesome Skills Collection
 
 > A comprehensive collection of pre-built Claude Agent Skills to supercharge your AI workflow
 
@@ -10,7 +10,7 @@
 
 ## 📖 Introduction
 
-Welcome to the **Claude Agent Skills Collection** - your ultimate resource for enhancing Claude's capabilities with specialized skills. This repository contains a curated collection of ready-to-use skills that extend Claude's functionality across various domains, from development and design to content creation and productivity.
+Welcome to the **Agent Skills Collection** - your ultimate resource for enhancing Claude's capabilities with specialized skills. This repository contains a curated collection of ready-to-use skills that extend Claude's functionality across various domains, from development and design to content creation and productivity.
 
 **What are Agent Skills?**
 Skills are specialized folders containing instructions, scripts, and resources that Claude can dynamically load when relevant to your task. They make Claude better at specific tasks like working with Excel files, following brand guidelines, debugging code, or creating beautiful designs.
@@ -81,13 +81,122 @@ Skills are specialized folders containing instructions, scripts, and resources t
 
 ---
 
+## 📦 Installation via Plugin Marketplace (Recommended)
+
+The easiest way to install and manage skills is through the Claude Code Plugin Marketplace.
+
+### Quick Start
+
+```bash
+# 1. Add this repository as a marketplace
+/plugin marketplace add kntism/skills
+
+# 2. Browse available skills
+/plugin marketplace list
+
+# 3. Install individual skills
+/plugin install test-driven-development@top-agent-skills
+/plugin install frontend-design@top-agent-skills
+/plugin install brainstorming@top-agent-skills
+
+# 4. Or install all skills at once
+/plugin install all-skills@top-agent-skills
+```
+
+### Available Skills
+
+The marketplace includes 50+ skills organized by category:
+
+| Category | Skills |
+|----------|--------|
+| **Development** | `test-driven-development`, `systematic-debugging`, `mcp-builder`, `requesting-code-review`, `receiving-code-review`, `using-git-worktrees`, `subagent-driven-development` |
+| **Design** | `frontend-design`, `artifacts-builder`, `canvas-design`, `brand-guidelines`, `theme-factory`, `slack-gif-creator` |
+| **AI/ML** | `model-trainer`, `hugging-face-dataset-creator`, `hugging-face-evaluation-manager`, `hugging-face-paper-publisher` |
+| **Content** | `content-research-writer`, `changelog-generator`, `brainstorming`, `internal-comms` |
+| **Productivity** | `file-organizer`, `invoice-organizer`, `meeting-insights-analyzer`, `domain-name-brainstormer`, `raffle-winner-picker` |
+| **Testing** | `webapp-testing`, `condition-based-waiting`, `testing-anti-patterns`, `testing-skills-with-subagents` |
+| **Workflow** | `writing-plans`, `writing-skills`, `finishing-a-development-branch`, `verification-before-completion` |
+
+### Update Skills
+
+```bash
+# Update the marketplace to get the latest skills
+/plugin marketplace update kntism/skills
+
+# Update individual installed skills
+/plugin update test-driven-development@top-agent-skills
+```
+
+### Manual Installation (Alternative)
+
+If you prefer manual installation or want to contribute:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/kntism/skills.git
+   cd skills
+   ```
+
+2. **Copy skill folders** to your skills directory:
+   ```bash
+   # Copy individual skill
+   cp -r test-driven-development ~/.claude/skills/
+
+   # Or copy all skills
+   cp -r */ ~/.claude/skills/
+   ```
+
+3. **Restart Claude Code** to load the new skills
+
+---
+
+## 🏗️ Create Your Own Marketplace
+
+Want to share your own collection of skills? You can create your own plugin marketplace!
+
+1. **Prepare your skills repository** with skill folders
+2. **Create marketplace configuration**:
+   ```bash
+   mkdir .claude-plugin
+   cat > .claude-plugin/marketplace.json << EOF
+   {
+     "name": "your-marketplace-name",
+     "owner": {
+       "name": "Your Name",
+       "email": ""
+     },
+     "metadata": {
+       "description": "Your skill collection description",
+       "homepage": "https://github.com/your-username/your-repo"
+     },
+     "plugins": [
+       {
+         "name": "your-skill-name",
+         "source": "./your-skill-folder",
+         "description": "Skill description",
+         "version": "1.0.0"
+       }
+     ]
+   }
+   EOF
+   ```
+
+3. **Push to GitHub** and share with others:
+   ```bash
+   /plugin marketplace add your-username/your-repo
+   ```
+
+For detailed instructions, see [plugin-marketplace.md](./plugin-marketplace.md).
+
+---
+
 ## 🚀 Getting Started
 
 ### For Users
 
 1. **Browse Skills**: Explore the categories above to find skills that match your needs
-2. **Install Skills**: Copy skill folders to your `~/.claude/skills` directory
-3. **Enable Skills**: Enable Skills in Claude Code settings
+2. **Install via Marketplace**: Use `/plugin marketplace add kntism/skills` for easy installation
+3. **Or Install Manually**: Copy skill folders to your `~/.claude/skills` directory
 4. **Use Automatically**: Claude will automatically load relevant skills when needed
 
 ### For Developers

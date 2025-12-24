@@ -1,0 +1,313 @@
+{
+  "name": "top-agent-skills",
+  "owner": {
+    "name": "aiskills.top",
+    "email": ""
+  },
+  "metadata": {
+    "description": "Collection of Claude Code skills for development, debugging, testing, productivity, and AI/ML workflows",
+    "homepage": "https://github.com/kntism/skills"
+  },
+  "plugins": [
+    {
+      "name": "algorithmic-art",
+      "source": "./algorithmic-art",
+      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration",
+      "version": "1.0.0"
+    },
+    {
+      "name": "artifacts-builder",
+      "source": "./artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using React, Tailwind CSS, and shadcn/ui",
+      "version": "1.0.0"
+    },
+    {
+      "name": "brainstorming",
+      "source": "./brainstorming",
+      "description": "Use when creating or developing, before writing code or implementation plans - refines rough ideas into fully-formed designs",
+      "version": "1.0.0"
+    },
+    {
+      "name": "brand-guidelines",
+      "source": "./brand-guidelines",
+      "description": "Applies Anthropic's official brand colors and typography to artifacts",
+      "version": "1.0.0"
+    },
+    {
+      "name": "canvas-design",
+      "source": "./canvas-design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy",
+      "version": "1.0.0"
+    },
+    {
+      "name": "changelog-generator",
+      "source": "./changelog-generator",
+      "description": "Automatically creates user-facing changelogs from git commits",
+      "version": "1.0.0"
+    },
+    {
+      "name": "clean-code-checker",
+      "source": "./clean-code-checker",
+      "description": "Helps check and optimize code according to Clean Code principles",
+      "version": "1.0.0"
+    },
+    {
+      "name": "competitive-ads-extractor",
+      "source": "./competitive-ads-extractor",
+      "description": "Extracts and analyzes competitors' ads from ad libraries",
+      "version": "1.0.0"
+    },
+    {
+      "name": "condition-based-waiting",
+      "source": "./condition-based-waiting",
+      "description": "Use when tests have race conditions - replaces arbitrary timeouts with condition polling",
+      "version": "1.0.0"
+    },
+    {
+      "name": "content-research-writer",
+      "source": "./content-research-writer",
+      "description": "Assists in writing high-quality content with research, citations, and real-time feedback",
+      "version": "1.0.0"
+    },
+    {
+      "name": "defense-in-depth",
+      "source": "./defense-in-depth",
+      "description": "Use when invalid data causes failures - validates at every layer data passes through",
+      "version": "1.0.0"
+    },
+    {
+      "name": "dispatching-parallel-agents",
+      "source": "./dispatching-parallel-agents",
+      "description": "Use when facing 3+ independent failures - dispatches multiple agents to investigate concurrently",
+      "version": "1.0.0"
+    },
+    {
+      "name": "domain-name-brainstormer",
+      "source": "./domain-name-brainstormer",
+      "description": "Generates creative domain name ideas and checks availability across multiple TLDs",
+      "version": "1.0.0"
+    },
+    {
+      "name": "executing-plans",
+      "source": "./executing-plans",
+      "description": "Use when given complete implementation plan - executes in controlled batches with review checkpoints",
+      "version": "1.0.0"
+    },
+    {
+      "name": "file-organizer",
+      "source": "./file-organizer",
+      "description": "Intelligently organizes files and folders by understanding context and automating cleanup",
+      "version": "1.0.0"
+    },
+    {
+      "name": "finishing-a-development-branch",
+      "source": "./finishing-a-development-branch",
+      "description": "Use when implementation is complete - guides completion and presents integration options",
+      "version": "1.0.0"
+    },
+    {
+      "name": "frontend-design",
+      "source": "./frontend-design",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality",
+      "version": "1.0.0"
+    },
+    {
+      "name": "hugging-face-dataset-creator",
+      "source": "./hugging-face-dataset-creator",
+      "description": "Creates and publishes datasets to Hugging Face Hub with proper formatting and metadata",
+      "version": "1.0.0"
+    },
+    {
+      "name": "hugging-face-evaluation-manager",
+      "source": "./hugging-face-evaluation-manager",
+      "description": "Manages model evaluations on Hugging Face with result tracking and comparison",
+      "version": "1.0.0"
+    },
+    {
+      "name": "hugging-face-paper-publisher",
+      "source": "./hugging-face-paper-publisher",
+      "description": "Publishes research papers as Hugging Face model cards with code and data links",
+      "version": "1.0.0"
+    },
+    {
+      "name": "image-enhancer",
+      "source": "./image-enhancer",
+      "description": "Improves image quality by enhancing resolution, sharpness, and clarity",
+      "version": "1.0.0"
+    },
+    {
+      "name": "invoice-organizer",
+      "source": "./invoice-organizer",
+      "description": "Automatically organizes invoices and receipts for tax preparation",
+      "version": "1.0.0"
+    },
+    {
+      "name": "internal-comms",
+      "source": "./internal-comms",
+      "description": "Resources for writing internal communications like status reports, newsletters, and updates",
+      "version": "1.0.0"
+    },
+    {
+      "name": "lead-research-assistant",
+      "source": "./lead-research-assistant",
+      "description": "Identifies high-quality leads for products and services by analyzing target companies",
+      "version": "1.0.0"
+    },
+    {
+      "name": "meeting-insights-analyzer",
+      "source": "./meeting-insights-analyzer",
+      "description": "Analyzes meeting transcripts to uncover behavioral patterns and communication insights",
+      "version": "1.0.0"
+    },
+    {
+      "name": "mcp-builder",
+      "source": "./mcp-builder",
+      "description": "Guide for creating high-quality MCP servers that enable LLMs to interact with external services",
+      "version": "1.0.0"
+    },
+    {
+      "name": "model-trainer",
+      "source": "./model-trainer",
+      "description": "Trains and fine-tunes models with automatic logging, checkpointing, and Hugging Face integration",
+      "version": "1.0.0"
+    },
+    {
+      "name": "raffle-winner-picker",
+      "source": "./raffle-winner-picker",
+      "description": "Picks random winners from lists, spreadsheets, or Google Sheets for giveaways and contests",
+      "version": "1.0.0"
+    },
+    {
+      "name": "receiving-code-review",
+      "source": "./receiving-code-review",
+      "description": "Use when receiving code review feedback - requires technical rigor and verification",
+      "version": "1.0.0"
+    },
+    {
+      "name": "requesting-code-review",
+      "source": "./requesting-code-review",
+      "description": "Use when completing tasks or before merging - dispatches code-reviewer subagent",
+      "version": "1.0.0"
+    },
+    {
+      "name": "root-cause-tracing",
+      "source": "./root-cause-tracing",
+      "description": "Use when errors occur deep in execution - traces bugs backward through call stack",
+      "version": "1.0.0"
+    },
+    {
+      "name": "sharing-skills",
+      "source": "./sharing-skills",
+      "description": "Use to contribute skills upstream via pull request - guides branching, committing, and creating PR",
+      "version": "1.0.0"
+    },
+    {
+      "name": "skill-creator",
+      "source": "./skill-creator",
+      "description": "Guide for creating effective skills that extend Claude's capabilities",
+      "version": "1.0.0"
+    },
+    {
+      "name": "skill-share",
+      "source": "./skill-share",
+      "description": "Creates new Claude skills and automatically shares them on Slack using Rube",
+      "version": "1.0.0"
+    },
+    {
+      "name": "slack-gif-creator",
+      "source": "./slack-gif-creator",
+      "description": "Creates animated GIFs optimized for Slack with proper constraints and validation",
+      "version": "1.0.0"
+    },
+    {
+      "name": "subagent-driven-development",
+      "source": "./subagent-driven-development",
+      "description": "Use when executing implementation plans - dispatches fresh subagent per task with code review",
+      "version": "1.0.0"
+    },
+    {
+      "name": "systematic-debugging",
+      "source": "./systematic-debugging",
+      "description": "Use when encountering bugs - four-phase framework ensuring understanding before solutions",
+      "version": "1.0.0"
+    },
+    {
+      "name": "template-skill",
+      "source": "./template-skill",
+      "description": "Template skill for creating new skills",
+      "version": "1.0.0"
+    },
+    {
+      "name": "test-driven-development",
+      "source": "./test-driven-development",
+      "description": "Use when implementing features - write test first, watch it fail, write minimal code to pass",
+      "version": "1.0.0"
+    },
+    {
+      "name": "testing-anti-patterns",
+      "source": "./testing-anti-patterns",
+      "description": "Prevents testing mock behavior, production pollution, and mocking without understanding",
+      "version": "1.0.0"
+    },
+    {
+      "name": "testing-skills-with-subagents",
+      "source": "./testing-skills-with-subagents",
+      "description": "Verifies skills work under pressure by applying RED-GREEN-REFACTOR cycle",
+      "version": "1.0.0"
+    },
+    {
+      "name": "theme-factory",
+      "source": "./theme-factory",
+      "description": "Toolkit for styling artifacts with 10 pre-set themes or generating custom themes",
+      "version": "1.0.0"
+    },
+    {
+      "name": "using-git-worktrees",
+      "source": "./using-git-worktrees",
+      "description": "Creates isolated git worktrees with smart directory selection and safety verification",
+      "version": "1.0.0"
+    },
+    {
+      "name": "using-superpowers",
+      "source": "./using-superpowers",
+      "description": "Use when starting any conversation - establishes mandatory workflows for finding and using skills",
+      "version": "1.0.0"
+    },
+    {
+      "name": "verification-before-completion",
+      "source": "./verification-before-completion",
+      "description": "Use before claiming work is complete - requires running verification commands",
+      "version": "1.0.0"
+    },
+    {
+      "name": "video-downloader",
+      "source": "./video-downloader",
+      "description": "Downloads videos from YouTube and other platforms for offline viewing or archival",
+      "version": "1.0.0"
+    },
+    {
+      "name": "web-artifacts-builder",
+      "source": "./web-artifacts-builder",
+      "description": "Suite of tools for creating elaborate claude.ai HTML artifacts using React, Tailwind CSS, and shadcn/ui",
+      "version": "1.0.0"
+    },
+    {
+      "name": "webapp-testing",
+      "source": "./webapp-testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright",
+      "version": "1.0.0"
+    },
+    {
+      "name": "writing-plans",
+      "source": "./writing-plans",
+      "description": "Use when design is complete - creates comprehensive implementation plans with exact file paths",
+      "version": "1.0.0"
+    },
+    {
+      "name": "writing-skills",
+      "source": "./writing-skills",
+      "description": "Guide for writing effective skills with progressive disclosure design principles",
+      "version": "1.0.0"
+    }
+  ]
+}
