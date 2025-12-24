@@ -1,8 +1,8 @@
 # 🎯 Agent Skills - Awesome Skills Collection
 
-> A comprehensive collection of pre-built Claude Agent Skills to supercharge your AI workflow
+> A comprehensive collection of pre-built Agent Skills to supercharge your AI workflow
 
-![Skills](https://img.shields.io/badge/Skills-Collection-blue?style=for-the-badge&logo=claude&logoColor=white)
+![Skills](https://img.shields.io/badge/Skills-Collection-blue?style=for-the-badge&logo=robot&logoColor=white)
 ![Last Updated](https://img.shields.io/badge/Updated-November%202025-green?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
@@ -10,10 +10,10 @@
 
 ## 📖 Introduction
 
-Welcome to the **Agent Skills Collection** - your ultimate resource for enhancing Claude's capabilities with specialized skills. This repository contains a curated collection of ready-to-use skills that extend Claude's functionality across various domains, from development and design to content creation and productivity.
+Welcome to the **Agent Skills Collection** - your ultimate resource for enhancing AI agent capabilities with specialized skills. This repository contains a curated collection of ready-to-use skills that extend AI agent functionality across various domains, from development and design to content creation and productivity.
 
 **What are Agent Skills?**
-Skills are specialized folders containing instructions, scripts, and resources that Claude can dynamically load when relevant to your task. They make Claude better at specific tasks like working with Excel files, following brand guidelines, debugging code, or creating beautiful designs.
+Agent Skills are modular packages containing instructions, scripts, and resources that AI agents can dynamically load when relevant to a task. They transform general-purpose AI agents into specialized assistants capable of handling specific workflows, tools, or domains. While originally popularized by Claude, Agent Skills are now a universal pattern for extending AI agent capabilities across platforms.
 
 ---
 
@@ -81,11 +81,11 @@ Skills are specialized folders containing instructions, scripts, and resources t
 
 ---
 
-## 📦 Installation via Plugin Marketplace (Recommended)
+## 📦 Installation
 
-The easiest way to install and manage skills is through the Claude Code Plugin Marketplace.
+### For Claude Code Users (Plugin Marketplace)
 
-### Quick Start
+The easiest way to install and manage skills is through the Claude Code Plugin Marketplace:
 
 ```bash
 # 1. Add this repository as a marketplace
@@ -127,9 +127,9 @@ The marketplace includes 50+ skills organized by category:
 /plugin update test-driven-development@top-agent-skills
 ```
 
-### Manual Installation (Alternative)
+### Manual Installation
 
-If you prefer manual installation or want to contribute:
+For Claude Code and other compatible platforms:
 
 1. **Clone the repository**:
    ```bash
@@ -137,56 +137,27 @@ If you prefer manual installation or want to contribute:
    cd skills
    ```
 
-2. **Copy skill folders** to your skills directory:
+2. **Copy skill folders** to your agent's skills directory:
    ```bash
-   # Copy individual skill
+   # For Claude Code
    cp -r test-driven-development ~/.claude/skills/
 
    # Or copy all skills
    cp -r */ ~/.claude/skills/
+
+   # For other platforms, check your agent's documentation
+   # for the correct skills directory path
    ```
 
-3. **Restart Claude Code** to load the new skills
+3. **Restart your AI agent application** to load the new skills
 
----
+### Universal Compatibility
 
-## 🏗️ Create Your Own Marketplace
-
-Want to share your own collection of skills? You can create your own plugin marketplace!
-
-1. **Prepare your skills repository** with skill folders
-2. **Create marketplace configuration**:
-   ```bash
-   mkdir .claude-plugin
-   cat > .claude-plugin/marketplace.json << EOF
-   {
-     "name": "your-marketplace-name",
-     "owner": {
-       "name": "Your Name",
-       "email": ""
-     },
-     "metadata": {
-       "description": "Your skill collection description",
-       "homepage": "https://github.com/your-username/your-repo"
-     },
-     "plugins": [
-       {
-         "name": "your-skill-name",
-         "source": "./your-skill-folder",
-         "description": "Skill description",
-         "version": "1.0.0"
-       }
-     ]
-   }
-   EOF
-   ```
-
-3. **Push to GitHub** and share with others:
-   ```bash
-   /plugin marketplace add your-username/your-repo
-   ```
-
-For detailed instructions, see [plugin-marketplace.md](./plugin-marketplace.md).
+These skills follow the standard Agent Skills format and can be adapted for:
+- **Claude Code** - Native support via `/plugin marketplace`
+- **Claude API** - Load skills as context for API calls
+- **Other AI Agents** - Adapt skill structure for your platform
+- **Custom Implementations** - Use skill patterns in your own agent framework
 
 ---
 
@@ -213,16 +184,19 @@ For detailed instructions, see [plugin-marketplace.md](./plugin-marketplace.md).
 ## 🎯 Key Benefits
 
 ### ✨ Composable
-Skills stack together automatically. Claude identifies which skills are needed and coordinates their use seamlessly.
+Skills stack together automatically. AI agents identify which skills are needed and coordinate their use seamlessly.
 
 ### 📦 Portable
-Skills use the same format everywhere. Build once, use across Claude apps, Claude Code, and the API.
+Skills use a consistent format. Build once, use across different AI platforms and applications.
 
 ### ⚡ Efficient
-Only loads what's needed, when it's needed, keeping Claude fast while accessing specialized expertise.
+Only loads what's needed, when it's needed, keeping AI agents fast while accessing specialized expertise.
 
 ### 🔧 Powerful
-Skills can include executable code for tasks where traditional programming is more reliable than token generation.
+Skills can include executable code for tasks where traditional programming is more reliable than AI generation alone.
+
+### 🌐 Universal
+Works across different AI platforms that support the Agent Skills pattern.
 
 ---
 
@@ -245,11 +219,14 @@ We welcome contributions! Here's how you can help:
 
 ## 📚 Documentation
 
-### Official Resources
+### For Claude Users
 - [Claude Skills Documentation](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview)
 - [Claude Code Skills Guide](https://docs.claude.com/en/docs/claude-code/skills)
-- [Skills Cookbook](https://github.com/anthropics/claude-cookbooks/tree/main/skills)
+- [Claude Skills Cookbook](https://github.com/anthropics/claude-cookbooks/tree/main/skills)
+
+### General Resources
 - [Anthropic Academy](https://www.anthropic.com/learn/build-with-claude)
+- [Agent Skills Engineering Blog](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)
 
 ### Skill Creation
 - Use the `skill-creator` skill for interactive guidance
@@ -259,7 +236,7 @@ We welcome contributions! Here's how you can help:
 
 ## 🔗 Related Projects
 
-- [Anthropic/skills](https://github.com/anthropics/skills) - Official skills repository
+- [Anthropic/skills](https://github.com/anthropics/skills) - Official Claude skills repository
 - [claude-cookbooks](https://github.com/anthropics/claude-cookbooks) - Comprehensive cookbook and examples
 - [Claude Developer Platform](https://www.claude.com/platform/api) - API documentation
 - [Claude Code](https://code.claude.com/) - Desktop application documentation
@@ -268,12 +245,13 @@ We welcome contributions! Here's how you can help:
 
 ## ⚠️ Security Notice
 
-This feature gives Claude access to execute code. While powerful, it means being mindful about which skills you use. Always:
+Agent Skills may include executable code and system access. While powerful, this means being mindful about which skills you use. Always:
 
 - Stick to trusted sources to keep your data safe
 - Review skills before installation
 - Only use skills from reputable creators
-- Be cautious with skills that request system access
+- Be cautious with skills that request system access or sensitive data
+- Test skills in isolated environments before production use
 
 ---
 
@@ -285,9 +263,10 @@ This collection is licensed under the MIT License. See individual skill folders 
 
 ## 🙏 Acknowledgments
 
-- [Anthropic](https://www.anthropic.com/) - For creating Claude and the Agent Skills framework
-- The Claude community - For contributing and testing these skills
-- Skill authors - For their innovative and useful contributions
+- [Anthropic](https://www.anthropic.com/) - For creating Claude and pioneering the Agent Skills framework
+- The AI agent community - For contributing and testing these skills across platforms
+- All skill authors - For their innovative and useful contributions
+- Contributors who help adapt skills for universal compatibility
 
 ---
 
@@ -300,7 +279,7 @@ This collection is licensed under the MIT License. See individual skill folders 
 
 ---
 
-**Made with ❤️ by the Claude Skills Community**
+**Made with ❤️ by the [aiskills.top](https://www.aiskills.top/)**
 
 ---
 
